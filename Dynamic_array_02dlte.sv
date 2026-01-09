@@ -10,5 +10,8 @@ end
  $display("Before delete",da.size());
 da.delete();
  $display("after delete",da.size());
+ da=new[2];
+ da[1]=8'd45;
+  $display("then after ",da.size(),da[1]);
 end
 endmodule
