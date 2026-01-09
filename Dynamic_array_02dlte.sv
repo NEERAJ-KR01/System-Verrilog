@@ -7,5 +7,8 @@ foreach(da[i]) begin //da[i]=(i=0; i<=(n-1); i=i+1)
  da[i]=$random;
  $display("room:%d%d%b",i,da[i],da[i]);
 end
+ $display("Before delete",da.size());
+da.delete();
+ $display("after delete",da.size());
 end
 endmodule
