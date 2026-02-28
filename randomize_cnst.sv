@@ -10,7 +10,7 @@ class watch ;
    endclass
    
    class watch_ex extends watch; 
-   constraint cnst {Hr>=13;}
+   constraint cnst1 {Hr>=13;}
    endclass 
    
    module tb;
