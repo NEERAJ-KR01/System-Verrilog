@@ -2,13 +2,13 @@ class transection ;
  rand bit[4:0] hr; //12hr
  rand bit[5:0] min, sec;
   function  void post_randomize();
-    $display("AFTER:: hr:%0d min:%0d sec:%0d", hr,min,sec);
+   $display("TIME:: hr:%0d min:%0d sec:%0d", hr,min,sec);
    endfunction
    endclass
    module tb;
   transection t_h;
   initial begin
   t_h=new();
-    t_h.randomize();
+   repeat(6) t_h.randomize();
   end 
   endmodule
